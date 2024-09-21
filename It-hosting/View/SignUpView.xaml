@@ -1,0 +1,21 @@
+﻿<Window x:Class="It_hosting_2._0.View.SignUpView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:It_hosting_2._0.View"
+        mc:Ignorable="d"
+        Title="SignUpView" Height="450" Width="800">
+    <StackPanel Background="DimGray">
+        <Label Margin="0 100 0 0" HorizontalAlignment="Center">Login</Label>
+        <TextBox Text="{Binding Path=Login}" Margin="250 0 250 0" Background="LightGray"/>
+        <Label HorizontalAlignment="Center">Nickname</Label>
+        <TextBox Text="{Binding Path=UserName}" Margin="250 0 250 0" Background="LightGray"/>
+        <Label HorizontalAlignment="Center">Password</Label>
+        <PasswordBox x:Name="PasswordBox" Margin="250 0 250 0" PasswordChanged="PasswordBox_PasswordChanged" Background="LightGray"/>
+        <Label HorizontalAlignment="Center">Repeat password</Label>
+        <PasswordBox x:Name="RepeatPasswordBox" PasswordChanged="RepeatPasswordBox_PasswordChanged" Margin="250 0 250 0" Background="LightGray"/>
+        <Button Command="{Binding AddUserCommand}" Margin="250 5 250 -30">Create account</Button>
+    </StackPanel>
+    
+</Window>

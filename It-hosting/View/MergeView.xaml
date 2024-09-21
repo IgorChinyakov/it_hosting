@@ -1,0 +1,15 @@
+﻿<Window x:Class="It_hosting_2._0.View.MergeView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:It_hosting_2._0.View"
+        mc:Ignorable="d"
+        Title="MergeView" Height="200" Width="800">
+    <Grid Background="DimGray">
+        <Label Margin="300 70 100 0" HorizontalAlignment="Left" Content="{Binding SecondBranch.Title}" FontSize="14"></Label>
+        <Label Margin="0 70" HorizontalAlignment="Center" Content="🠔" FontSize="14"></Label>
+        <Label Margin="100 70 300 0" HorizontalAlignment="Right" Content="{Binding FirstBranch.Title}" FontSize="14"></Label>
+        <Button Margin="40 120 40 10" Command="{Binding MergeCommand}">Merge</Button>
+    </Grid>
+</Window>

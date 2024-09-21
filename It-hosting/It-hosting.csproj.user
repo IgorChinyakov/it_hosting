@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="View\BranchView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\CommitFileView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\CommitsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\CreatingRepositoryView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\FileView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\MergeView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\PullRequestView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\RepositoriesView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\RepositoryView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\SignInView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\SignUpView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\UserProfileView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\BranchView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\CommitFileView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\CommitsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\CreatingRepositoryView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\FileView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\MergeView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\PullRequestView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\RepositoriesView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\RepositoryView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\SignInView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\SignUpView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\UserProfileView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

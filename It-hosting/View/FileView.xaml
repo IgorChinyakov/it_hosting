@@ -1,0 +1,22 @@
+﻿<Window x:Class="It_hosting_2._0.View.FileView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:It_hosting_2._0.View"
+        mc:Ignorable="d"
+        Title="FileView" Height="450" Width="800">
+    <Grid Background="DimGray">
+        <Label Content="{Binding FileTitle}" FontSize="20"></Label>
+        <Button Margin="600 -400 0 0" Height="25" Content="Commits" Background="DimGray" Command="{Binding CommitsOpening}"></Button>
+        <ListBox Margin="0 40 0 0" ItemsSource="{Binding FileStringsViewModel}" HorizontalContentAlignment="Stretch" Background="DimGray">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="0 0 0 0">
+                        <TextBlock Text="{Binding FileString}" Background="DimGray" FontStyle="Normal" Foreground="Black" FontSize="19" Height="30"></TextBlock> 
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>

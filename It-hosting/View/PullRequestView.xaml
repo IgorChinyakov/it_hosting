@@ -1,0 +1,20 @@
+﻿<Window x:Class="It_hosting_2._0.View.PullRequestView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:It_hosting_2._0.View"
+        mc:Ignorable="d"
+        Title="PullRequestView" Height="450" Width="800">
+    <Grid Background="DimGray">
+        <ListBox Margin="0 20 0 0" ItemsSource="{Binding PRBranchesViewModels}" HorizontalContentAlignment="Stretch" Background="DimGray">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <Button Background="DimGray" Content="{Binding Branch.Title}" Command="{Binding OpeningMergeViewCommand}" Margin="0" Height="40"></Button>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>

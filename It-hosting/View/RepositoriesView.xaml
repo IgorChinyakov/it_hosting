@@ -1,0 +1,25 @@
+﻿<Window x:Class="It_hosting_2._0.View.RepositoriesView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:It_hosting_2._0.View"
+        mc:Ignorable="d"
+        Title="RepositoriesView" Height="450" Width="800">
+    <Grid Background="DimGray">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button Background="DimGray" Margin="10" FontSize="30" Command="{Binding OpeningCreatingRepositoryCommand}">Create Repository</Button>
+        <ListBox Grid.Row="1" ItemsSource="{Binding RepositoriesView}" Grid.Column="1" HorizontalContentAlignment="Stretch" Background="DimGray">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="0">
+                        <Button Background="DimGray" Command="{Binding OpeningRepositoryViewCommand}" Content="{Binding Path=Repository.Title}" Margin="0" Height="40"></Button>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>
